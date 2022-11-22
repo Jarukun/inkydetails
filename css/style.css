@@ -9,7 +9,7 @@
 }
 
 #latest {
-    scroll-margin-top: 40vh;
+    scroll-margin-top: 30vh;
   }
 
   @media only screen and (max-width: 900px) {
@@ -126,15 +126,19 @@ nav ul li a:hover {
 
 
 h1 {
-    font-size: clamp(3.5vw, 2vw, 1.5vw);
+    font-size: clamp(2vw, 2.5vw, 1.5vw);
     font-family: 'Shadows Into Light', cursive;
 }
 
-@media only screen and (max-width: 900px) {
-    .top img{
-        aspect-ratio: 101/137;
-        width: 40vw;
-        height: 30vw;
+@media only screen and (max-width: 1920px) {
+    h1{
+        font-size: clamp(3vw, 2vw, 1.5vw);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: clamp(8vw, 6vw, 4vw);
     }
 }
 
@@ -157,6 +161,14 @@ section {
     height: 15vw;
 }
 
+@media only screen and (max-width: 900px) {
+    .top img{
+        aspect-ratio: 101/137;
+        width: 40vw;
+        height: 30vw;
+    }
+}
+
 .middle {
     background-color: #e471cb;
     padding: 0 3vw 10vh 3vw;
@@ -173,7 +185,7 @@ section {
 }
 
 .spacer {
-    aspect-ratio: 960/300;
+    aspect-ratio: 960/270;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
