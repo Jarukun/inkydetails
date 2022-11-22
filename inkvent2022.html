@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+    <script>
+        // external js: flickity.pkgd.js
+
+var $carousel = $('.carousel').flickity();
+var $background = $('.parallax__layer--bg');
+var $foreground = $('.parallax__layer--fg');
+
+var cellRatio = 0.6; // outerWidth of cell / width of carousel
+var bgRatio = 0.8; // width of background layer / width of carousel
+var fgRatio = 1.25; // width of foreground layer / width of carousel
+
+var flkty = $carousel.data('flickity');
+var count = flkty.slides.length - 1;
+
+$carousel.on( 'scroll.flickity', function( event, progress ) {
+  moveParallaxLayer( $background, bgRatio, progress );
+  moveParallaxLayer( $foreground, fgRatio, progress );
+});
+// trigger initial scroll
+$carousel.flickity('reposition');
+
+function moveParallaxLayer( $layer, layerRatio, progress ) {
+  var ratio = cellRatio * layerRatio;
+  $layer.css({
+    left: ( 0.5 - ( 0.5 + progress * count ) * ratio ) * 100 + '%'
+  });
+}
+
+    </script>
+</head>
+<body id="home">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#latest">Latest</a></li>
+                <li><a href="#selection">Selection</a></li>
+                <li><a href="#selection">Inkvent 2021</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="top">
+        <img src="./img/logo.png" alt="Inksplat logo">
+        <h1>Come and check out my macro photos of the Inkvent 2022 inks!</h1>
+    </section>
+    <div class="spacer waves1"></div>
+    <section class="middle" id="latest">
+        <h1>Latest Entry</h1>
+        <!-- <p>I will upload the newest opened door every day, the newest entry will be here.</p> -->
+        <div class="currentday"><img src="./img/day1.png" alt=""></div>
+        <div class="curve"></div>
+    </section>
+    <div class="spacer waves2"></div>
+    <section class="bottom"  id="selection">
+        <h1>View Previous Days</h1>
+        <div class="slider">
+            <div class="slides">
+              <div id="slide-1">
+                1
+              </div>
+              <div id="slide-2">
+                2
+              </div>
+              <div id="slide-3">
+                3
+              </div>
+              <div id="slide-4">
+                4
+              </div>
+              <div id="slide-5">
+                5
+              </div>
+              <div id="slide-6">
+                6
+              </div>
+              <div id="slide-7">
+                6
+              </div>
+              <div id="slide-8">
+                8
+              </div>
+              <div id="slide-9">
+                9
+              </div>
+              <div id="slide-10">
+                10
+              </div>
+              <div id="slide-11">
+                11
+              </div>
+              <div id="slide-12">
+                12
+              </div>
+              <div id="slide-13">
+                13
+              </div>
+              <div id="slide-14">
+                14
+              </div>
+              <div id="slide-15">
+                15
+              </div>
+              <div id="slide-16">
+                16
+              </div>
+              <div id="slide-17">
+                17
+              </div>
+              <div id="slide-18">
+                18
+              </div>
+              <div id="slide-19">
+                19
+              </div>
+              <div id="slide-20">
+                20
+              </div>
+              <div id="slide-21">
+                21
+              </div>
+              <div id="slide-22">
+                22
+              </div>
+              <div id="slide-23">
+                23
+              </div>
+              <div id="slide-24">
+                24
+              </div>
+              <div id="slide-25">
+                25
+              </div>
+            </div>
+            <a href="#slide-1">1</a>
+            <a href="#slide-2">2</a>
+            <a href="#slide-3">3</a>
+            <a href="#slide-4">4</a>
+            <a href="#slide-5">5</a>
+            <a href="#slide-6">6</a>
+            <a href="#slide-7">7</a>
+            <a href="#slide-8">8</a>
+            <a href="#slide-9">9</a>
+            <a href="#slide-10">10</a>
+            <a href="#slide-11">11</a>
+            <a href="#slide-12">12</a>
+            <a href="#slide-13">13</a>
+            <a href="#slide-14">14</a>
+            <a href="#slide-15">15</a>
+            <a href="#slide-16">16</a>
+            <a href="#slide-17">17</a>
+            <a href="#slide-18">18</a>
+            <a href="#slide-19">19</a>
+            <a href="#slide-20">20</a>
+            <a href="#slide-21">21</a>
+            <a href="#slide-22">22</a>
+            <a href="#slide-23">23</a>
+            <a href="#slide-24">24</a>
+            <a href="#slide-25">25</a>
+          </div>
+    </section>
+</body>
+</html>
