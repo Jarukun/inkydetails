@@ -342,17 +342,15 @@ footer p:first-of-type {
     position: relative;
   }
 
-  .slider > a:active {
-    top: 1px;
-    background-color: #000;
-    color: white;
+  .slider > a:visited, .slider a:focus, .slider > a {
+    color: black;
   }
 
-  .slider > a:focus {
-    background: #000;
+  .slider > a:active {
+    top: 1px;
   }
 
   .slideractive {
-    color: white;
+    color: white !important;
     background-color: #000 !important;
 }
