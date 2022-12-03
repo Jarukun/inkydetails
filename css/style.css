@@ -192,7 +192,7 @@ section {
 
 @media (hover: hover) {
     .card {
-        background-image: url(../img/bliss4.webp);
+        background-image: url(../img/solarstormbg.webp);
         background-repeat: no-repeat;
         aspect-ratio: 4/3;
         width: 40vw;
@@ -297,7 +297,7 @@ section {
 
 @media (hover: none) {
     .card {
-        background-image: url(../img/bliss4.webp);
+        background-image: url(../img/solarstormbg.webp);
         background-repeat: no-repeat;
         aspect-ratio: 4/3;
         width: 70vw;
@@ -363,7 +363,7 @@ section {
 
 .bottom {
     background-color: #84c8ff;
-    padding: 10vh 3vw;
+    padding: 10vh 3vw 2vh 3vw;
 }
 
 .spacer {
@@ -560,10 +560,20 @@ footer p:first-of-type {
 
 
 .slider {
-    width: 400px;
+    /* width: 400px; */
+    /* aspect-ratio: 4/3; */
+    width: 30vw;
+    height: 30vw;
     text-align: center;
     overflow: hidden;
     border-radius: 10px;
+  }
+
+  @media (max-width: 767px){
+    .slider {
+        width: 70vw;
+        height: 70vw;    
+    }
   }
   
   .slides {
@@ -595,8 +605,11 @@ footer p:first-of-type {
   .slides > div {
     scroll-snap-align: start;
     flex-shrink: 0;
-    width: 400px;
-    height: 300px;
+    /* width: 400px; */
+    /* aspect-ratio: 4/3; */
+    width: 30vw;
+    height: 22vw;
+    /* height: 300px; */
     margin-right: 50px;
     border-radius: 10px;
     background: #eee;
@@ -610,6 +623,13 @@ footer p:first-of-type {
     justify-content: center;
     align-items: center;
     font-size: 100px;
+  }
+
+  @media (max-width: 767px){
+    .slides > div {
+        width: 70vw;
+        height: 55vw;
+    }
   }
 
   .author-info {
