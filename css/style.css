@@ -192,7 +192,7 @@ section {
 
 @media (hover: hover) {
     .card {
-        background-image: url(../img/solarstormbg.webp);
+        background-image: url(../img/sprucebg.webp);
         background-repeat: no-repeat;
         aspect-ratio: 4/3;
         width: 40vw;
@@ -297,7 +297,7 @@ section {
 
 @media (hover: none) {
     .card {
-        background-image: url(../img/solarstormbg.webp);
+        background-image: url(../img/sprucebg.webp);
         background-repeat: no-repeat;
         aspect-ratio: 4/3;
         width: 70vw;
