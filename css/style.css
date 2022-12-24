@@ -192,7 +192,7 @@ section {
 
 @media (hover: hover) {
     .card {
-        background-image: url(../img/celebrationbg.webp);
+        background-image: url(../img/onemoresleepbg.webp);
         background-repeat: no-repeat;
         aspect-ratio: 4/3;
         width: 40vw;
@@ -225,7 +225,7 @@ section {
     .card-content .title {
         position: absolute;
         bottom: 35%;
-        font-size: clamp(2vw, 3vw, 4vw);
+        font-size: clamp(1.8vw, 2.5vw, 3vw);
         font-weight: 600;
         color: white;
         transform: translateX(-150%);
@@ -297,7 +297,7 @@ section {
 
 @media (hover: none) {
     .card {
-        background-image: url(../img/celebrationbg.webp);
+        background-image: url(../img/onemoresleepbg.webp);
         background-repeat: no-repeat;
         aspect-ratio: 4/3;
         width: 70vw;
